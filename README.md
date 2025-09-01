@@ -1,3 +1,3 @@
 # CleanArchitectureDemo
 
-(CleanArchitecture_Image_1.png)
+![Arch.png](CleanArchitecture_Image_1.png)
