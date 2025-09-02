@@ -1,5 +1,5 @@
 # CleanArchitectureDemo
-This Project Is For My learning purposes to bes understand how to implement and create a Clean Architecture application as well as verticle slice archtecture.
+This Project Is For My learning purposes to Create a Enterprise Application that utilizes a varation between the Clean Architecture Application Pattern and the Verticle Slice Application Pattern. Before revieweing these I want to research and define the common  enterprise application design patterns.With Each pattern I will define its pros and cons. I may come back and update this to also include there best use cases.
 
 # Different Types of Application Architecture:
 ### 1. Monolithic Architecture (All-in-one)
@@ -18,13 +18,13 @@ This Project Is For My learning purposes to bes understand how to implement and 
     └── MyWebApp/
         ├── MyWebApp.csproj
         ├── Controllers/
-        │   └── UserController.cs
+        │   └── Controller.cs
         ├── Models/ (or ViewModels)
-        │   └── UserViewModel.cs
+        │   └── ViewModel.cs
         ├── BusinessLogic/ (or Services)
-        │   └── UserService.cs
+        │   └── Service.cs
         ├── DataAccess/ (or Repositories)
-        │   └── UserRepository.cs
+        │   └── Repository.cs
         └── wwwroot/
     ```
 
@@ -123,16 +123,16 @@ This Project Is For My learning purposes to bes understand how to implement and 
     ```
     MyWebApp.Application/
     └── Features/
-        ├── CreateUser/
-        │   ├── CreateUserCommand.cs
-        │   ├── CreateUserCommandHandler.cs
-        │   └── CreateUserValidator.cs
-        ├── GetUserById/
-        │   ├── GetUserByIdQuery.cs
-        │   └── GetUserByIdQueryHandler.cs
-        └── UpdateUserBio/
-            ├── UpdateUserBioCommand.cs
-            └── UpdateUserBioCommandHandler.cs
+        ├── Create/
+        │   ├── CreateCommand.cs
+        │   ├── CreateCommandHandler.cs
+        │   └── CreateValidator.cs
+        ├── GetById/
+        │   ├── GetByIdQuery.cs
+        │   └── GetByIdQueryHandler.cs
+        └── Update/
+            ├── UpdateCommand.cs
+            └── UpdateCommandHandler.cs
     ```
 
 *   **Pros:**
@@ -160,8 +160,8 @@ This Project Is For My learning purposes to bes understand how to implement and 
 *   **Common Structure (Multiple Independent Services):**
     ```
     Company.System/
-    ├── UserService/ (A complete, deployable app)
-    │   ├── UserService.sln
+    ├── Service/ (A complete, deployable app)
+    │   ├── Service.sln
     │   └── ...
     ├── OrderService/ (A complete, deployable app)
     │   ├── OrderService.sln
