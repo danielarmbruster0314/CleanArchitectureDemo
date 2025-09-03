@@ -11,6 +11,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureDemo.Appli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitectureDemo.Infrastructure", "CleanArchitectureDemo.Infrastructure\CleanArchitectureDemo.Infrastructure.csproj", "{95C5CA1E-831D-4C42-A18E-DC43199E1C08}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2657F428-129B-4640-B061-F233827C1332}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{5EADB54B-CBBA-4609-BBD9-CDF012031950}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{94C082D4-398D-4978-940C-B6E459850466}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7CEBF8F5-85B2-4767-8CAF-8FF2A6ED70EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{222AA629-F9A1-4008-8F70-6E8991C3F172}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{A78800B7-EE9B-4D70-9EEE-1222D375137A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +48,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C0392B98-E5C3-456C-88CC-DE1DDEB35B7E} = {7CEBF8F5-85B2-4767-8CAF-8FF2A6ED70EE}
+		{94C082D4-398D-4978-940C-B6E459850466} = {2657F428-129B-4640-B061-F233827C1332}
+		{7CEBF8F5-85B2-4767-8CAF-8FF2A6ED70EE} = {2657F428-129B-4640-B061-F233827C1332}
+		{222AA629-F9A1-4008-8F70-6E8991C3F172} = {2657F428-129B-4640-B061-F233827C1332}
+		{A78800B7-EE9B-4D70-9EEE-1222D375137A} = {2657F428-129B-4640-B061-F233827C1332}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {542A833D-AD47-4D07-B7F0-BA0B4EB4E111}
